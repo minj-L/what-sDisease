@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
+import {RNCamera} from 'react-native-camera';
 
 export default function App() {
   return (
@@ -12,6 +13,12 @@ export default function App() {
       }}
     >
       <Text style={{fontSize: 20, fontWeight: 'bold'}}>Hello World! 🤓</Text>
+      <RNCamera
+        style={{width: 200, height: 300}}
+        type={RNCamera.Constants.Type.back}
+        captureAudio={false}
+        />
     </View>
+    
   );
 }
