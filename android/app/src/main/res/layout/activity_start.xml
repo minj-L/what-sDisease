@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:background="@drawable/gradation_background"
+    tools:context=".StartActivity">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="68dp"
+        sothree:umanoShadowHeight="4dp">
+
+        <!-- 메인 화면 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="What`s \ndisease"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="80sp" />
+
+        <!-- 슬라이드 레이어 부분 -->
+        <include
+            android:id="@+id/bottom_sheet_layout2"
+            layout="@layout/activity_main" />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

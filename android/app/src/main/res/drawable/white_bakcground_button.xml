@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle">
+    <!-- 배경 색 설정 / 제가 color에 지정한 색입니다 ㅎㅎ -->
+    <solid android:color="@color/text_color" />
+</shape>
